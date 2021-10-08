@@ -44,6 +44,7 @@ $A$ is formal, as we then have an $A_\infty$-quasi-isomorphism between two dg-al
 This is rather important so we state it as a theorem.
 
 \begin{theorem}[\cite{AHO}]
+    \label{thm:AHO_formal}
     Let $(A, m)$ be a dg-algebra. Then $A$ is formal if and only if all the higher products
     on $H(A)$ vanish.        
 \end{theorem}
@@ -71,6 +72,7 @@ we first need a theorem that connects the higher products to normal Massey produ
 \end{theorem}
 
 \begin{corollary}[\cite{detection}]
+    \label{cor:detection_unique}
     Let $A$ be a dg-algebra and $m$ an $A_\infty$-structure on its cohomology $H(A)$ such 
     that $m_k = 0$ for all $1 \leq k \leq n-1$. Then the Massey $n$-product 
     $\langle x_1, \ldots, x_n \rangle$  is uniquely defined for any set of cohomology 
@@ -93,14 +95,15 @@ corollary.
     By Kadeishvili's theorem we know that $H(A)$ can be equipped with the structure 
     $\{m_i\}$ of an $A_\infty$-algebra such that $m_1=0$ and $m_2$ is the product induced 
     from $A$, which is assumed to be trivial. We claim that $m_k = 0$ for all $k\geq 3$ 
-    as well, and hence that $A$ is formal by [A+H=O]. We prove this claim by induction. 
+    as well, and hence that $A$ is formal by theorem \ref{thm:AHO_formal}. We prove this 
+    claim by induction. 
     
     Since $m_2=0$ we know that all Massey triple products are defined. By the below 
     induction argument all the higher Massey products will be defined as well. Since 
     $m_2=0$ we already have our base case.
     
-    Assume $m_k = 0$ for $1\leq k\leq n-1$. By \cite{detection} we know that 
-    $\langle x_1, \ldots, x_n \rangle$ consists of a unique element for all choices of 
+    Assume $m_k = 0$ for $1\leq k\leq n-1$. By corollary \ref{cor:detection_unique} we know 
+    that $\langle x_1, \ldots, x_n \rangle$ consists of a unique element for all choices of 
     classes $x_1, \ldots, x_n$. This element is by assumption the zero class, as we assumed 
     all Massey products to be vanishing. This class is recovered up to a sign by $m_n$, 
     which means $m_n(x_1,\ldots, x_n)=0$ for all choices of $x_1, \ldots, x_n$. Hence 
