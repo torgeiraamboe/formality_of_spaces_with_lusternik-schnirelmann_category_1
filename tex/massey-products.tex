@@ -1,0 +1,39 @@
+
+
+\section{Masse products}
+
+The other important part of this story is the Massey products. These are partially defined 
+higher order cohomology operations on dg-algebras. Since they are only partially defined 
+we need an easy way to package this information in. This is done through defining systems. 
+Let $A$ be a dg-algebra, and denote $\bar{x} = (-1)^{|x|}x$. 
+
+\begin{definition}
+    A defining system for a set of cohomology classes $x_1, \ldots, x_n$ 
+    in $H(A)$ is a collection $\{ a_{i,j}\}$ of cochains in $A$ such that
+    \begin{enumerate}
+        \item $[a_{i-1, i}] = x_i$
+        \item $d(a_{i, j}) = \sum_{i<k<j}\overline{a_{i, k}}a_{k, j}$
+    \end{enumerate}
+    for all pairs $(i,j)\neq (0,n)$ where $i\leq j$.
+\end{definition}
+
+\begin{definition}
+    The Massey $n$-product of $n$ cohomology classes $x_1, \ldots, x_n$, 
+    denoted $\langle x_1, \ldots, x_n\rangle$ is defined to be the set of all $[a_{0,n}]$, 
+    where $$a_{0,n} = \sum_{0<k<n}\overline{a_{0, k}}a_{k, n}$$ such that $\{ a_{i,j} \}$ 
+    is a defining system.         
+\end{definition}
+
+For $n=2$ this is just the induced product on cohomology, up to a sign. For $n=3$ this 
+is the classical triple Massey product. When we use the phrase ``all Massey $n$-products'', 
+we mean all Massey $n$-products for $n\geq 3$. 
+
+The fact that multiple cohomology classes can be in this set means that the product is 
+only partially defined. If this set contains just a single class, then we say the Massey 
+product is uniquely defined. What matters for us is when these products are trivial. 
+Since they are partially defined what we mean is the following.
+
+\begin{definition}
+    We say that the Massey $n$-product vanishes if it contains zero as an 
+    element, i.e. $0\in \langle x_1, \ldots, x_n\rangle$.    
+\end{definition}

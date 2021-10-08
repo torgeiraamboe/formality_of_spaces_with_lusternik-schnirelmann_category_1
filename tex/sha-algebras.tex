@@ -1,0 +1,77 @@
+\section{\texorpdfstring{$A_\infty$}{A}-algebras}
+
+For the rest of the paper we let $K$ be a field of characteristic $0$. 
+
+\begin{definition}
+    An $A_\infty$-algebra $(A, m)$, over $K$ is a $\Z$-graded vector 
+    space $A=\bigoplus_{i\in \Z}A_i$ together with a family of $K$-linear maps 
+    $m_n : A^{\otimes n}\longrightarrow A$ of degree $2-n$, such that the identities
+    $$\sum_{r+s+t = n}(-1)^{r+st}m_{r+1+t} (Id^{\otimes r}\otimes m_s \otimes Id^{\otimes t}) = 0$$
+    hold for all $n, s\geq 1$.
+\end{definition}
+
+These relations are called the coherence relations, or the Stasheff identities in $A$. 
+For $n=1$ the coherence relation simply becomes $$0 = (-1)^{0+0}m_1 (m_1) = m_1^2 .$$
+
+This means that $A$ is a cochain complex with differential $d=m_1$ as $m_1$ is a degree 
+$1$ map. For $n=2$ we get
+$$0 = (-1)^{1}m_2(Id\otimes m_1)+(-1)^{0}m_1 (m_2)+(-1)^{1}m_2 (m_1\otimes Id)$$
+which reduces to $m_1 m_2 = m_2(m_1\otimes Id + Id\otimes m_1)$. This means that $m_1$ is 
+a derivation with respect to $m_2$ as $m_2$ has degree $2$, usually stated as satisfying 
+the Leibniz rule. The standard Leibniz rule comes out of this formula when applying it to 
+elements and using the Koszul grading rule.
+
+The third relation tells us that $m_2$ is not necessarily associative, and that the 
+associator is given by $m_3$. This is usually referred to as $m_2$ being associative up 
+to homotopy, which gives $A_\infty$-algebras their other name, strong homotopy associative 
+algebras or sha-algebras for short. If $m_3=0$ (or $m_1=0$) this relation reduces to the 
+associator being zero, which means that $m_2$ is an associative product. 
+
+\begin{definition}
+    A dg-algebra is an $A_\infty$-algebra $(A, m)$ where $m_i = 0$ for 
+    $i \geq 3$. For simplicity we usually just denote it by $A$. 
+\end{definition}
+
+By the equations above describing the Stasheff identities, this is an equivalent 
+definition to the classical definition, i.e. a $\Z$-graded vector space with an 
+associative product and a differential satisfying the Leibniz rule. 
+
+\begin{definition}
+    Let $(A, m^A)$ and $(B, m^B)$ be $A_\infty$-algebras. A morphism of 
+    $A_\infty$-algebras $f:A\longrightarrow B$, also called $A_\infty$-morphism, is a 
+    family of linear maps $f_n:A^{\otimes n}\longrightarrow B$ of degree $1-n$, such that
+    $$\sum_{n = r+s+t}(-1)^{r+st}f_{r+1+t}(id^{\otimes r}\otimes m_s^A \otimes id^{\otimes t}) = \sum_{k=1}^{n}\sum_{n=i_1+\cdots i_k}(-1)^{u_k} m_k^B(f_{i_1}\otimes \cdots \otimes f_{i_k})$$
+    where $u_k=\displaystyle \sum_{t=1}^{k-1}t(i_{k-t}-1)$.     
+\end{definition}
+
+We call $f$ a $A_\infty$-isomorphism, or a isomorphism of $A_\infty$-algebras, if $f_1$ 
+is an isomorphism of chain complexes.
+
+Since any $A_\infty$-algebra $(A, m)$ has a map $m_1$ such that $m_1^2=0$, we can also 
+create its cohomology algebra, denoted $H(A)$. The cohomology algebra of a dg-algebra 
+is a graded associative algebra with the induced product from $A$, which we can treat as 
+a dg-algebra by letting it have trivial differential.
+
+Let $f:A\longrightarrow B$ be an $A_\infty$-morphism. We call $f$ a 
+$A_\infty$-quasi-isomorphism, or a quasi-isomorphism of $A_\infty$-algebras, if $f_1$ is 
+a quasi-isomorphism of chain complexes, i.e. it induces an isomorphism on their cohomology 
+algebras.
+
+Notice that if $f_j=0$ for $j\geq 2$ and $m^A_i = 0 = m^B_i$ for $i\geq 3$, i.e. $A$ and 
+$B$ are dg-algebras, then this definition reduces to the standard quasi-isomorphisms of 
+dg-algebras.
+
+\begin{definition}
+    Let $A$ be a dg-algebra. We say $A$ is formal if it is 
+    $A_\infty$-quasi-isomorphic to a dg-algebra with trivial differential.        
+\end{definition}
+
+Such a dg-algebra will be isomorphic to $H(A)$, so we can define a dg-algebra to be 
+formal if it is $A_\infty$-quasi-isomorphic to its cohomology algebra. We also remark 
+that this is not the most classical definition, which uses a zig-zag of 
+dg-quasi-isomorphisms instead of an $A_\infty$-quasi-isomorphism. This is equivalent 
+to the one we are using here. See [A+H=O] and [KELLER] for further details. 
+
+Formal dg-algebras are very nice algebras that as mentioned have their historical 
+upbringing in rational homotopy theory. Examples include the Sullivan algebras of 
+Kähler manifolds [DGMS].
