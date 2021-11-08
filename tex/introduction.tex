@@ -1,26 +1,26 @@
 
 \section{Introduction}
 
-Formal dg-algebras, being algebras that are quasi-isomorphic to their cohomology 
+The notion of formal dg-algebras, being algebras that are quasi-isomorphic to their cohomology 
 algebra, was introduced in \cite{DGMS} to solve problems in rational homotopy theory. In 
-the aforementioned paper, the authors remark that having no no-vanishing Massey 
+this paper, the authors remark that having no non-vanishing Massey 
 $n$-products is a weaker property than being formal, meaning that Massey $n$-products 
 serve as obstructions to formality. They claim that formality is equivalent to a 
 ``uniform vanishing'' – a stronger version of just being vanishing. In later times 
 the study of dg-algebras have been explored further using the theory of 
 $A_\infty$-algebras. Any dg-algebra $A$ can be viewed as a ``trivial'' 
-$A_\infty$-algebra, and the general ones can be thought of as homotopy theoretic 
-versions of dg-algebras. In \cite{kadeishvili} Kadeishvili proved that the cohomology 
-algebra $H(A)$ of a dg-algebra $A$ naturally admits an $A_\infty$-structure in such 
-a way that there is a quasi-isomorphism of $A_\infty$-algebras $H(A)\longrightarrow A$. 
+$A_\infty$-algebra, which ables us to think about general $A_\infty$-algebras as homotopy 
+theoretic versions of dg-algebras. In \cite{kadeishvili} Kadeishvili proved that the 
+cohomology algebra $H(A)$ of a dg-algebra $A$ naturally admits an $A_\infty$-structure in 
+such a way that there is a quasi-isomorphism of $A_\infty$-algebras $H(A)\longrightarrow A$. 
 The higher products on this $A_\infty$-structure are often claimed to be the Massey 
-products, but this is not always true as the $n$'th product on $H(A)$ is not always 
-a representative of the Massey $n$-product \cite{detection}. It is however the case that 
-the vanishing of these higher products on $H(A)$ is stronger than the vanishing of 
-the Massey $n$-products \cite{AHO} – in fact, if all the higher products vanish, then 
-the dg-algebra is formal. Hence having vanishing $A_\infty$-structure on $H(A)$ is 
-equivalent to $A$ being formal. Using the equivalent definition of formality from 
-\cite{keller} this is true almost by definition. 
+products, but this is not always true as the $n$-ary product of the $A_\infty$-structure on 
+$H(A)$ is not always a representative of the Massey $n$-product \cite{detection}. It is 
+however the case that the vanishing of these higher arity products on $H(A)$ is a stronger 
+condition than the vanishing of the Massey $n$-products \cite{AHO} – in fact, if all the 
+higher products vanish, then the dg-algebra is formal. Hence having vanishing 
+$A_\infty$-structure on $H(A)$ is equivalent to $A$ being formal. Using the equivalent 
+definition of formality from \cite{keller} this is true almost by definition. 
 
 In \cite{detection} the authors prove that even though the higher products on $H(A)$ might 
 not be the Massey products, they are so up to a sum of lower degree products. We use 
@@ -32,8 +32,21 @@ on spaces with vanishing cup products are always uniformly vanishing in the sens
 There is a property of a space that allows us to know an upper bound for its 
 cup-length, namely the Lusternik-Schnirelmann category of the space. This is an 
 integer describing how a space can be glued together by cones. If we limit our study 
-to spaces with Lusternik-Schnirelmann $1$, we are certain that our cup-length is $0$, 
-meaning that we have vanishing products on reduced cohomology. We introduce reduced 
-formality and use the above result to show that spaces with Lusternik-Schnirelmann 
-category $1$ are reduced formal, and afterward show that the word ``reduced'' is 
-redundant.
+to spaces with Lusternik-Schnirelmann $1$, we know that the cup-length is $0$, 
+meaning that we have vanishing products on reduced cohomology. Using the above result
+we then prove that spaces with Lusternik-Schnirelmann category $1$ are formal. This 
+generalizes the formality for suspended spaces, proven in \cite{FHT}.
+
+The result is most likely already known by specialists, but this seems to be a new method 
+of proving it. Alternatively one can use that any space $X$ with $\text{cat}_{LS}(X)=1$ 
+is a co-H-space \cite{hess}, and then that any co-H-space is a wedge of spheres 
+\cite{co-H-space}. Formality is preserved under the wedge product \cite{hess}, and since 
+spheres are formal, we know that any co-H-space, and thus any space $X$ with 
+$\text{cat}_{LS}(X)=1$ is a formal space. 
+
+\begin{acknowledgements}
+This work is the product of the authors master thesis at NTNU
+supervised by Gereon Quick. We want to thank him for an interesting project, and for 
+all the helpful feedback and comments. We also thank José Manuel Moreno-Fernández for 
+providing comments on an earlier version of this paper. 
+\end{acknowledgements}

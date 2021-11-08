@@ -8,11 +8,11 @@ cochains $C(X)$ on a topological space $X$, this means that $C(X)$ contains more
 information about our space than the cohomology ring of $X$. If a non-trivial Massey 
 product exists on $C(X)$, this means that there will always exist another space $Y$, 
 not homeomorphic to $X$, but with the same cohomology ring as $X$. The most famous 
-example of this is the Borromean rings. These are a set of three rings, every pair of 
+example of this are the Borromean rings. These are a set of three rings, every pair of 
 them not linked with the two others, but all three still linked. This has the same 
-cohomology ring as three unlinked circles, but the Borromean rings admits a non-vanishing 
+cohomology ring as three unlinked circles, but the Borromean rings admit a non-vanishing 
 Massey product, while the three unlinked circles does not. Hence the algebra of forms 
-on the Borromean rings can't be formal. This means that Massey products detects 
+on the Borromean rings can not be formal. This means that Massey products detect 
 non-formality. This is summarized into the following theorem.
 
 \begin{theorem}[\cite{DGMS}]
@@ -24,6 +24,7 @@ to determine that it is formal. But using the full $A_\infty$-algebras we can ge
 to some version of this being true.
 
 \begin{theorem}[\cite{kadeishvili}]
+    \label{thm:Kadeishvili}
     Let $(A,m)$ be a dg-algebra. Then there exists an (up to $A_\infty$-isomorphism) 
     unique $A_\infty$-algebra structure on its cohomology algebra $H(A)$ with $m_1=0$, 
     $m_2$ the induced product from $A$, and a quasi-isomorphism of $A_\infty$-algebras 
@@ -82,20 +83,19 @@ we first need a theorem that connects the higher products to normal Massey produ
     $\epsilon = (-1)^{\sum_{j=1}^{n-1} (n-j)|x_j|}$.
 \end{corollary}
 
-By this we make our first result — the fact that no non-vanishing Massey products is 
-equivalent to formality in the case of trivial induced product in cohomology — as a 
-corollary. 
+By this we get our first result.
 
-\begin{corollary}
+\begin{theorem}
+    \label{thm:1}
     Let $A$ be a dg-algebra and $H(A)$ its cohomology algebra. If the induced product on 
     $H(A)$ is trivial and all Massey $n$-products on $A$ vanish, then $A$ is formal.        
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
-    By Kadeishvili's theorem we know that $H(A)$ can be equipped with the structure 
+    By \cref{thm:Kadeishvili} we know that $H(A)$ can be equipped with the structure 
     $\{m_i\}$ of an $A_\infty$-algebra such that $m_1=0$ and $m_2$ is the product induced 
     from $A$, which is assumed to be trivial. We claim that $m_k = 0$ for all $k\geq 3$ 
-    as well, and hence that $A$ is formal by theorem \ref{thm:AHO_formal}. We prove this 
+    as well, and hence that $A$ is formal by \cref{thm:AHO_formal}. We prove this 
     claim by induction. 
     
     Since $m_2=0$ we know that all Massey triple products are defined. By the below 
@@ -115,11 +115,11 @@ Massey products neatly forms a trivial $A_\infty$-structure on $H(A)$, which we 
 said was the way of interpreting the uniform vanishing.
 
 It is tempting to think that having trivial product in cohomology also makes every attempt 
-to build and produce a Massey product impossible. This feels true intuitively, but there 
-are examples of this not being the case. One example is the free loop space of an 
-even-dimensional sphere. Its cohomology algebra has trivial product, and it is shown in 
-\cite{nonformal_loop} to have non-zero Massey products. Hence it can't be formal. We also 
-mentioned the Borromean rings earlier, which gives another example. 
+to build and produce a Massey product impossible. But there are examples of this not being 
+the case. One example is the free loop space of an even-dimensional sphere. Its cohomology 
+algebra has trivial product, and it is shown in \cite{nonformal_loop} to have non-zero 
+Massey products. Hence it can not be formal. We also mentioned the Borromean rings earlier, 
+which gives another example. 
 
 \begin{question}
 Is there a more general procedure for choosing elements in all the Massey 

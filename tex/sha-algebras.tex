@@ -1,14 +1,16 @@
 
 \section{\texorpdfstring{$A_\infty$}{A}-algebras}
 
-For the rest of the paper we let $K$ be a field of characteristic $0$. 
+We provide a quick overview of the most important theory on $A_\infty$-algebras. 
+For a more in-depth treatment, see \cite{keller}. 
+Let $K$ be a field of characteristic $0$. 
 
 \begin{definition}
     An $A_\infty$-algebra $(A, m)$, over $K$ is a $\Z$-graded vector 
     space $A=\bigoplus_{i\in \Z}A_i$ together with a family of $K$-linear maps 
     $m_n : A^{\otimes n}\longrightarrow A$ of degree $2-n$, such that the identities
     $$\sum_{r+s+t = n}(-1)^{r+st}m_{r+1+t} (Id^{\otimes r}\otimes m_s \otimes Id^{\otimes t}) = 0$$
-    hold for all $n, s\geq 1$.
+    hold for all $n, s\geq 1$ and $r, t\geq 0$.
 \end{definition}
 
 These relations are called the coherence relations, or the Stasheff identities in $A$. 
@@ -32,9 +34,9 @@ associator being zero, which means that $m_2$ is an associative product.
     $i \geq 3$. For simplicity we usually just denote it by $A$. 
 \end{definition}
 
-By the equations above describing the Stasheff identities, this is an equivalent 
-definition to the classical definition, i.e. a $\Z$-graded vector space with an 
-associative product and a differential satisfying the Leibniz rule. 
+By the equations above describing the Stasheff identities, this definition is equivalent 
+to the classical definition, i.e. a $\Z$-graded vector space with an associative product 
+and a differential satisfying the Leibniz rule. 
 
 \begin{definition}
     Let $(A, m^A)$ and $(B, m^B)$ be $A_\infty$-algebras. A morphism of 
@@ -44,7 +46,7 @@ associative product and a differential satisfying the Leibniz rule.
     where $u_k=\displaystyle \sum_{t=1}^{k-1}t(i_{k-t}-1)$.     
 \end{definition}
 
-We call $f$ a $A_\infty$-isomorphism, or a isomorphism of $A_\infty$-algebras, if $f_1$ 
+We call $f$ an $A_\infty$-isomorphism, or an isomorphism of $A_\infty$-algebras, if $f_1$ 
 is an isomorphism of chain complexes.
 
 Since any $A_\infty$-algebra $(A, m)$ has a map $m_1$ such that $m_1^2=0$, we can also 
@@ -52,7 +54,7 @@ create its cohomology algebra, denoted $H(A)$. The cohomology algebra of a dg-al
 is a graded associative algebra with the induced product from $A$, which we can treat as 
 a dg-algebra by letting it have trivial differential.
 
-Let $f:A\longrightarrow B$ be an $A_\infty$-morphism. We call $f$ a 
+Let $f:A\longrightarrow B$ be an $A_\infty$-morphism. We call $f$ an 
 $A_\infty$-quasi-isomorphism, or a quasi-isomorphism of $A_\infty$-algebras, if $f_1$ is 
 a quasi-isomorphism of chain complexes, i.e. it induces an isomorphism on their cohomology 
 algebras.
@@ -66,7 +68,7 @@ dg-algebras.
     $A_\infty$-quasi-isomorphic to a dg-algebra with trivial differential.        
 \end{definition}
 
-Such a dg-algebra will be isomorphic to $H(A)$, so we can define a dg-algebra to be 
+A formal dg-algebra is isomorphic to $H(A)$, so we can define a dg-algebra to be 
 formal if it is $A_\infty$-quasi-isomorphic to its cohomology algebra. We also remark 
 that this is not the most classical definition, which uses a zig-zag of 
 dg-quasi-isomorphisms instead of an $A_\infty$-quasi-isomorphism. This is equivalent 

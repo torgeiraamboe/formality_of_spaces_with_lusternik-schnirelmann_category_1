@@ -137,7 +137,7 @@ linkcolor=[rgb]{0,0,0.8},
 	{\strut \textit{Proof.}~}%  
 	{\strut \textit{Proof~#1.}~}%                       
 	\relax
-}{\par\hspace{\fill}\qedsymbol{}\vspace{8pt}}
+}{\hspace{\fill}\qedsymbol{}\vspace{8pt}}
 
 \newenvironment{question}[1][]{%
 	\vspace{8pt}
@@ -148,7 +148,14 @@ linkcolor=[rgb]{0,0,0.8},
 	\relax
 }{\vspace{8pt}}
 
-
+\newenvironment{acknowledgements}[1][]{%
+	\vspace{8pt}
+	\par\noindent
+    \ifstrempty{#1}%
+	{\strut \textbf{Acknowledgements.}~}%  
+	{\strut \textbf{Acknowledgements~#1.}~}%                       
+	\relax
+}{\vspace{8pt}}
 
 \crefname{mathenv}{theorem}{theorems}
 \crefname{lemma}{lemma}{lemma}
