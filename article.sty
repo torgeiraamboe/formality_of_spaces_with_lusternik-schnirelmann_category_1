@@ -52,6 +52,23 @@ linkcolor=[rgb]{0,0,0.8},
     right=30mm
 }
 
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{thmstyletwo}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{question}{Question}
+\newtheorem{acknowledgements}{Acknowledgements}
+
+\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definition}
+
+
+\iffalse
+
 
 \newcounter{mathenv}[section]
 \setcounter{mathenv}{1}
@@ -196,6 +213,8 @@ linkcolor=[rgb]{0,0,0.8},
 	\crefalias{mathenv}{example} %mathenv counter ser nå ut som example
 	\tempExample%
 }%
+
+\fi
 
 \newcommand{\N}{\ensuremath{\mathbb{N}}}
 \newcommand{\R}{\ensuremath{\mathbb{R}}}

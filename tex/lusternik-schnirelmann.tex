@@ -86,7 +86,7 @@ construct the neccesary span of dg-quasi-isomorphism.
 
 \begin{proof}
     Since $X$ is reduced formal we know that there is a span of dg-quasi-isomorphisms 
-    $\widetilde{H}^\ast(X;K)\longleftarrow B \longrightarrow \widetilde{C}^\ast(X;K)$ for some 
+    $$\widetilde{H}^\ast(X;K)\longleftarrow B \longrightarrow \widetilde{C}^\ast(X;K)$$ for some 
     dg-algebra $B$:
 
     \begin{center}
@@ -189,7 +189,7 @@ construct the neccesary span of dg-quasi-isomorphism.
             \draw [-to] (7) to node {$d^1_B$} (8);
             
             \draw [-to] (9) to node {} (10);
-            \draw [-to] (10) to node {} (11);
+            \draw [-to] (10) to node {$0$} (11);
             \draw [-to] (11) to node {$0$} (12);
             
             \draw [-to] (5) to node {} (1);
@@ -208,13 +208,13 @@ construct the neccesary span of dg-quasi-isomorphism.
 
     The squares in the diagram commutes due to the original squares commuting
     and the cohomologies also agree by construction. Thus we have a span of 
-    dg-quasi-isomorphisms $H^\ast(X;K)\longleftarrow B'\longrightarrow C^\ast(X;K)$, 
+    dg-quasi-isomorphisms $$H^\ast(X;K)\longleftarrow B'\longrightarrow C^\ast(X;K),$$ 
     which means $X$ is formal. 
 \end{proof}
 
 We are now ready to conclude with our main result.
 \begin{theorem}
-    Let $X$ be a space with $\text{cat}_{LS}(X)=1$. Then $X$ is formal.     
+    Let $X$ be a space with $\text{cat}_{LS}(X)\leq 1$. Then $X$ is formal.     
 \end{theorem}
 
 \begin{question}
